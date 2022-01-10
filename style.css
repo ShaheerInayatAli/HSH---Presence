@@ -1,0 +1,404 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {margin: 0; padding: 0; box-sizing: border-box;}
+h1, h2, h3, h4, h5, p, span, a {margin: 0; padding: 0; color: #fff;}
+body {background-color: rgba(0, 0, 0, 1);}
+
+/* ------------------------------ video ------------------------------ */
+.video-container video{
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+    z-index: -2;
+}
+
+/* ------------------------------ Wrapper Grid ------------------------------ */
+.grand-wrapper {
+    max-width: 1920px; margin: 0 auto;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+  
+  .wide {
+    grid-column: span 2 / auto;
+}
+
+
+
+/* ------------------------------ Navbar ------------------------------ */
+.navbar {
+    flex-wrap: wrap;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 4.375rem 6.25rem;
+    background: rgba(0, 0, 0, 0.01);
+    backdrop-filter: blur(4px);
+}
+
+.logo {
+    width: 80px;;
+}
+
+.left-text {
+    color: #E7E7E7;
+    font-family: 'Rubik', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 26px;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+}
+
+.dota2-container {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.dota2-container span {
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 26px;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 1px;
+}
+
+
+/* ------------------------------ Main Content ------------------------------ */
+main {
+    background: rgba(0, 0, 0, 0.01);
+    backdrop-filter: blur(32px);
+    transition: all .3s ease-in-out;
+}
+
+main:hover {
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(60px);
+}
+
+.middle-content {
+    padding: 4.375rem 2rem;
+    flex-wrap: wrap;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.middle-content h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 26px;
+    letter-spacing: 1px;
+}
+
+.num-pages {
+    margin-top: 43px;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.num-pages h4 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    line-height: 26px;
+}
+
+.intro {
+    margin-bottom: 16rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.intro h1 {
+    font-family: 'Rubik', sans-serif;
+    font-size: 4.5rem;
+    font-weight: 700;
+}
+
+.intro p {
+    color: #d4d4d4;
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: 'Rubik', sans-serif;
+    line-height: 26px;
+    width: 25rem;
+}
+
+.about-me {
+    display: flex;
+    gap: 0.5rem;
+    flex-direction: column;
+}
+
+.about-me h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.about-me p {
+    font-size: 1rem;
+    color: #d4d4d4;
+    font-weight: 400;
+    font-family: 'Rubik', sans-serif;
+    line-height: 26px;
+    width: 25rem;
+}
+
+
+
+/* ------------------------------ Footer ------------------------------ */
+footer {
+    background: rgba(0, 0, 0, 0.01);
+    backdrop-filter: blur(12px);
+    transition: all .3s ease-in-out;
+}
+
+footer:hover {
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(60px);
+}
+
+.footer-content {
+    padding: 4.375rem 2rem;
+    flex-wrap: wrap;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer-content h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 26px;
+    letter-spacing: 1px;
+}
+
+.fav-heroes {
+    margin-top: 43px;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+
+.fav-heroes h4 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    line-height: 26px;
+}
+
+.gifs {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    transition: all .4s ease-out;
+}
+
+.gifs video {
+    width: 180px;
+    border-radius: 20px;
+    transition: all .4s ease-out;
+}
+
+.gifs video:hover {
+    width: 400px;
+    border-radius: 8px;
+}
+
+.gifs:hover {
+    gap: 1rem;
+}
+
+.items {
+    display: flex;
+    gap: 0.5rem;
+    flex-direction: column;
+}
+
+.items h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+
+.items p {
+    font-size: 1rem;
+    color: #d4d4d4;
+    font-weight: 400;
+    font-family: 'Rubik', sans-serif;
+    line-height: 26px;
+    width: 25rem;
+}
+
+
+
+/* ------------------------------ 1440p Media Query ------------------------------ */
+@media screen and (max-width:1730px) {
+    .wrapper {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      }
+      
+      .wide {
+        grid-column: auto;
+      }
+}
+
+
+
+/* ------------------------------ 1024p Media Query ------------------------------ */
+@media screen and (max-width:1310px) {
+    .wrapper {
+        display: grid;
+        grid-template-columns: 1fr;
+      }
+      
+      .wide {
+        grid-column: auto;
+      }
+
+      .video-container video{
+        width: 98.1vw;
+    }
+
+      .navbar {
+        align-items: center;
+        backdrop-filter: blur(4px);
+        background: rgba(0, 0, 0, 0.01);
+        display: flex;
+        flex-wrap: wrap;
+        height: auto;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 4rem 3.5rem;
+        transition: all .6s ease-out;
+    }
+
+    .left-text {
+        color: #E7E7E7;
+        font-family: 'Rubik', sans-serif;
+        font-size: 1rem;
+        font-weight: 700;
+        line-height: 26px;
+        letter-spacing: 6px;
+        text-transform: uppercase;
+        writing-mode: horizontal-tb;
+    }
+
+
+
+/* ------------------------------ Main Content ------------------------------ */
+    main {
+        background: rgba(0, 0, 0, 0.01);
+        backdrop-filter: blur(32px);
+        transition: all .3s ease-in-out;
+    }
+    
+    main:hover {
+        background: rgba(0, 0, 0, 0.6);
+        backdrop-filter: blur(60px);
+    }
+
+    .middle-content {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2.5rem;
+        height: auto;
+        justify-content: space-between;
+        padding: 3.5rem;
+        transition: all .6s ease-out;
+    }
+
+    .year-num-container {
+        align-items: center;
+        display: flex;
+        gap: 29.625rem;
+        padding-bottom: 0;
+        justify-content: space-between;
+    }
+
+     .year-num-container h3 {
+        display: none;
+    }
+
+    .year-num-container h3 {
+        padding-bottom: 0;
+    }
+
+    .detail-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        flex-wrap: wrap;
+        gap: 2.5rem;
+    }
+
+    .intro {
+        margin-bottom: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+
+
+/* ------------------------------ Footer Content ------------------------------ */
+    .footer-content {
+        display: flex;
+        height: auto;
+        gap: 2rem;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 3.5rem;
+        transition: all .6s ease-out;
+    }
+
+    .gifs {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: flex-end;
+        gap: 1.5rem;
+        transition: all .4s ease-out;
+    }
+
+    .gifs video:hover {
+        width: 300px;
+        border-radius: 8px;
+    }
+
+    .fav-heroes {
+        display: none;
+    }
+
+}
+
+
+
+
+
+
+
