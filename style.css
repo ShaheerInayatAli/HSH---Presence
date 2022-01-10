@@ -388,6 +388,7 @@ footer:hover {
     .gifs video:hover {
         width: 300px;
         border-radius: 8px;
+        flex-wrap: wrap;
     }
 
     .fav-heroes {
